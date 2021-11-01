@@ -152,7 +152,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/1.1.0/url-search-params.js"></script>
 
   <script>
-    if (window.document.documentMode) {
+    if (!window.document.documentMode) {
       const queryString = window.location.search;
       window.location.href = `https://app.getsafetycheck.fr/invitation${queryString}`;
     }
